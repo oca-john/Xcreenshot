@@ -87,3 +87,11 @@ pnpm tauri build
 ## 许可证
 
 MIT License
+
+## 作者
+
+Made with ♥️ by Oca John
+
+---
+
+**Xcreenshot  v0.9.2** | *捕捉瞬间，标注灵感*

@@ -94,4 +94,4 @@ Made with ♥️ by Oca John
 
 ---
 
-**Xcreenshot  v0.9.2** | *捕捉瞬间，标注灵感*
+**Xcreenshot  0.9.2** | *捕捉瞬间. 标注灵感*

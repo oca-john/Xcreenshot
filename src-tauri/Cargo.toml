@@ -1,0 +1,32 @@
+[package]
+name = "xcreenshot"
+version = "0.9.2"
+description = "Cross-platform screenshot tool with annotation support"
+authors = ["Xcreenshot"]
+edition = "2021"
+
+[lib]
+name = "xcreenshot_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2.1", features = ["tray-icon", "image-png"] }
+tauri-plugin-global-shortcut = "2.0"
+tauri-plugin-store = "2.1"
+tauri-plugin-autostart = "2.0"
+tauri-plugin-dialog = "2.0"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+xcap = "0.0.14"
+arboard = { version = "3", features = ["image-data"] }
+image = "0.25"
+base64 = "0.22"
+chrono = "0.4"
+dirs = "5"
+tokio = { version = "1", features = ["sync"] }
+
+[target.'cfg(not(any(target_os = "android", target_os = "ios")))'.dependencies]
+tauri-plugin-global-shortcut = "2"

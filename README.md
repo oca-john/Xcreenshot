@@ -1,10 +1,10 @@
 # Xcreenshot
 
 ![Version](https://img.shields.io/badge/version-0.9.2-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey)
 
-跨平台截图工具 | Cross-platform Screenshot Tool
-
-基于 Tauri v2 + React + TypeScript 开发
+一个现代化的跨平台截图工具，基于 Tauri v2 + React + TypeScript 开发
 
 ## 功能特性
 

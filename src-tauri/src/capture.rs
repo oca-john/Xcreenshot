@@ -469,39 +469,6 @@ fn get_scale_factor() -> f64 {
     1.0
 }
 
-/// 获取鼠标位置 (Windows)
-#[cfg(target_os = "windows")]
-fn get_mouse_position() -> (i32, i32) {
-    use std::mem::MaybeUninit;
-    
-    #[repr(C)]
-    struct POINT {
-        x: i32,
-        y: i32,
-    }
-    
-    extern "system" {
-        fn GetCursorPos(lpPoint: *mut POINT) -> i32;
-    }
-    
-    unsafe {
-        let mut point = MaybeUninit::<POINT>::uninit();
-        if GetCursorPos(point.as_mut_ptr()) != 0 {
-            let point = point.assume_init();
-            (point.x, point.y)
-        } else {
-            (0, 0)
-        }
-    }
-}
-
-/// 获取鼠标位置 (Linux/macOS)
-#[cfg(not(target_os = "windows"))]
-fn get_mouse_position() -> (i32, i32) {
-    // Linux/macOS 下暂时返回 (0, 0)，后续可以使用 x11/wayland 或 cocoa API
-    (0, 0)
-}
-
 /// 兼容旧接口
 pub fn start_capture(app: &tauri::AppHandle, mode: &str) -> Result<(), Box<dyn std::error::Error>> {
     match mode {

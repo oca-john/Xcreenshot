@@ -16,7 +16,7 @@ import shutil
 # Icon output directory
 ICONS_DIR = "src-tauri/icons"
 PUBLIC_DIR = "public"
-SOURCE_FILE = "src-tauri/icons/icon.png"
+SOURCE_FILE = "src-tauri/icons/Xcreenshot.png"
 
 # Tauri required PNG sizes
 TAURI_PNG_SIZES = {

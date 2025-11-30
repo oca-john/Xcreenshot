@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Xcreenshot
+Comment=Cross-platform screenshot tool with annotation support
+Exec=xcreenshot
+Icon=xcreenshot
+Terminal=false
+Type=Application
+Categories=Office;TextEditor;Utility;
+StartupWMClass=Xcreenshot
+Keywords=screenshot;capture;annotation;

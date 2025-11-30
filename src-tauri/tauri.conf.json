@@ -41,7 +41,11 @@
   },
   "bundle": {
     "active": true,
-    "targets": "all",
+    "targets": [
+      "deb",
+      "rpm",
+      "app"
+    ],
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",
@@ -51,6 +55,9 @@
       "icons/icon.icns"
     ],
     "resources": [],
+    "category": "Utility",
+    "shortDescription": "Cross-platform screenshot tool with annotation support",
+    "longDescription": "Xcreenshot is a cross-platform screenshot tool with annotation support. It allows you to capture screenshots and add annotations like arrows, rectangles, text, and more.",
     "windows": {
       "certificateThumbprint": null,
       "digestAlgorithm": "sha256",
@@ -60,7 +67,8 @@
           "SimpChinese",
           "English"
         ],
-        "displayLanguageSelector": true
+        "displayLanguageSelector": true,
+        "installerIcon": "icons/icon.ico"
       }
     },
     "linux": {
@@ -68,7 +76,8 @@
         "depends": [
           "libwebkit2gtk-4.1-0",
           "libappindicator3-1"
-        ]
+        ],
+        "section": "utils"
       },
       "rpm": {
         "depends": [

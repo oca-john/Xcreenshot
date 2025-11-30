@@ -467,7 +467,7 @@
 - [ ] **5.3.1** 配置 rpm/deb/AppImage 打包
   ```json
   "bundle": {
-    "targets": ["deb", "rpm", "appimage"],
+    "targets": ["deb", "rpm", "app"],
     "linux": {
       "section": "Graphics",
       "deb": {
@@ -491,7 +491,7 @@
   - 托盘图标显示正常
   - 无任务栏图标
 
-**验收标准**: 生成 `.deb`、`.rpm` 和 `.AppImage`
+**验收标准**: 生成 `.deb`、`.rpm` 和 `.tar.gz`
 
 ---
 
